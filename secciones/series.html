@@ -25,83 +25,101 @@
 </head>
 
 <body>
-    
-        <header>
-            <!-- Barra de Navegación -->
-            <nav class="navbar navbar-expand-lg navbar-expand-xl mb-5 navbar navbar-light fixed-top" style="background-color:#dca4fc
+
+    <header>
+        <!-- Barra de Navegación -->
+        <nav class="navbar navbar-expand-lg navbar-expand-xl mb-5 navbar navbar-light fixed-top" style="background-color:#dca4fc
             ;">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">checkseries</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">checkseries</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <div class="offcanvas offcanvas-end w-50 " tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header bg-black">
-                            <h1>checkseries</h1>
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
+                <div class="offcanvas offcanvas-end w-50 " tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header bg-black">
+                        <h1>checkseries</h1>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
 
-                        <div class="offcanvas-body bg-purple">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="../secciones/actividad.html">Actividad</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="../secciones/series.html">Series</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="../secciones/registrate.html">Registrate</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  " href="../secciones/iniciasesion.html">Inicia Sesión</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="offcanvas-body bg-purple">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="../secciones/actividad.html">Actividad</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="../secciones/series.html">Series</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="../secciones/registrate.html">Registrate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  " href="../secciones/iniciasesion.html">Inicia Sesión</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
 
-    <main class="mainSeries">
+    <main class="mainSeries series-flex">
         <h1 id="h1series">Series</h1>
 
-        <label for="comentario" class="buscador"> Buscar series </label>
-        <br>
-        <textarea name="comentario" cols="20" rows="02"></textarea>
+        <label for="comentario" class="buscador"> Busca una serie por su título </label>
+        <textarea name="comentario" cols="30" rows="01" style="width: 200px;"></textarea>
+        <input type="submit" value="Buscar" style="width: 54px;">
+        <div>
+            <h2 class="genero h3">Filtrar por género</h2>
 
-        <input type="submit" value="Buscar">
-        <br>
-        <h2 class="genero">Filtrar por género</h2>
+            <select name="genero" style="width: 200px;">
+                <option value="">Género</option>
+                <option value="action">Acción</option>
+                <option value="drama"> Drama </option>
+                <option value="cienciafic"> Ciencia Ficción</option>
+                <option value="comedia"> Comedia </option>
+                <option value="romcom"> Comedia Romántica</option>
+                <option value="documental"> Documental </option>
+                <option value="musical"> Musical </option>
+                <option value="romance"> Romance </option>
+                <option value="thriller"> Terror </option>
 
-        <select name="genero">
-            <option value="">Género</option>
-            <option value="action">Acción</option>
-            <option value="drama"> Drama </option>
-            <option value="cienciafic"> Ciencia Ficción</option>
-            <option value="comedia"> Comedia </option>
-            <option value="romcom"> Comedia Romántica</option>
-            <option value="documental"> Documental </option>
-            <option value="musical"> Musical </option>
-            <option value="romance"> Romance </option>
-            <option value="thriller"> Terror </option>
+        </div>
+        <input type="submit" value="Aplicar Filtro" style="width: 95px;">
 
         </select>
 
-        <section class="sugerenciaSeries">
+        <section class="recomendacion-flex">
             <h2 id="h2series"> El trailer que no te deberías perder: </h2>
-            <br>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/NqrlWUmpVLg"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </section>
+        <div class="sugerenciaSeries flexSeriesAbajo">
+            <h3> Por si no sabes qué mirar... </h3>
+            <p>Te dejamos estas sugerencias.</p>
+    <h3> Ganadores de los premios Emmy (edicion 2021)</h3>
+    <li> <strong>Serie Drama:</strong> The Crown </li>
+    <li> <strong>Miniserie:</strong> The Queen's Gambit </li>
+    <li> <strong>Serie Comedia:</strong> Ted Lasso </li>
+    <li> <strong>Serie de Reality:</strong> Ru Paul's Drag Race. </li>
+    <article class="container-fluid fotosSugerencias">
+        <section>
+            <img src="../imagenes/the_crown.png" height="300" width="205" alt="portada_emmy">
+            <img src="../imagenes/the_queens_gambit.jpg" height="300" alt="portada_emmy">
+            <img src="../imagenes/ted_lasso.jpg" height="300" alt="portada_emmy">
+            <img src="../imagenes/rupaul.jpg" height="300" alt="portada_emmy">
+        </section>
+        </article>
+        </div>
+
     </main>
 </body>
 

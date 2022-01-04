@@ -102,13 +102,25 @@ li {
 }
 
 
-/* Tabla actividad */
+/* actividad */
 
+/* Tabla */
 .titulo {
     color: #6a5096;
     text-decoration: underline;
     line-height: inherit;
 }
+
+/* Series */
+
+.genero {
+    color: #a484c2;
+}
+
+.sugerenciaSeries {
+    background-color: #a795b1;
+}
+
 
 /* BEM */
 /* Bloque */
@@ -200,7 +212,7 @@ li {
 }
 
 .registro-flex aside {
-   justify-content: left;
+    justify-content: left;
 }
 
 
@@ -209,7 +221,8 @@ li {
 }
 
 #h1-actividad {
-    margin-top: 4px;
+    margin-top: 60px;
+    margin-left: 5px;
     color: #a478bf;
 }
 

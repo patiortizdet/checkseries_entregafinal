@@ -49,6 +49,27 @@ h1 {
   margin: 5px;
   justify-content: space-between; }
 
+.letrasactividad {
+  font-size: 18px; }
+
+/* Inicio de sesión */
+.fieldsetInicio {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+/* Series */
+.mainSeries {
+  margin-left: 10px; }
+
+#h2series {
+  font-weight: bold; }
+
+.sugerenciaSeries {
+  margin-bottom: 15px; }
+
+.fotosSugerencias {
+  margin-top: 10px; }
+
 #ulactividad {
   margin-left: 15px; }
 
@@ -75,9 +96,19 @@ h1 {
 
 .actividad-flex {
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 85px; }
+
+.tablaFlex {
+  display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 5px; }
+  margin-bottom: 15px; }
+
+.medidasTabla {
+  height: 120px;
+  width: 900px; }
 
 .registro-flex {
   display: flex;
@@ -95,12 +126,32 @@ h1 {
   justify-content: right;
   margin-left: 60px; }
 
+.series-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+
+.recomendacion-flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
 /* Footer */
 footer {
   position: static;
   bottom: 0;
   width: 100%;
   height: 100px; }
+
+@keyframes series_fondo {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 2; } }
 
 body {
   background-color: #f1f0f5;
@@ -178,11 +229,19 @@ li {
 .section-flex div {
   text-align: center; }
 
-/* Tabla actividad */
+/* actividad */
+/* Tabla */
 .titulo {
   color: #6a5096;
   text-decoration: underline;
   line-height: inherit; }
+
+/* Series */
+.genero {
+  color: #a484c2; }
+
+.sugerenciaSeries {
+  background-color: #a795b1; }
 
 /* BEM */
 /* Bloque */
@@ -266,7 +325,8 @@ li {
   background-color: #dca4fc; }
 
 #h1-actividad {
-  margin-top: 4px;
+  margin-top: 60px;
+  margin-left: 5px;
   color: #a478bf; }
 
 #h2-actividad {
