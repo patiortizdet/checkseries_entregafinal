@@ -1,0 +1,220 @@
+@import "medidas";
+
+
+body {
+    background-color: #f1f0f5;
+    font-family: 'Syne', sans-serif;
+}
+
+header {
+    background-color: #e1d1f0;
+}
+
+h1 {
+    color: #7155cf;
+    text-decoration: dotted;
+}
+
+
+h2 {
+    color: #a089fa;
+
+}
+
+h3 {
+    color: rebeccapurple;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* Clases */
+
+.subtituloDelInicio {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Noticias */
+
+.cajaNoticias {
+    margin-left: 10px;
+}
+
+/* Newsletter */
+#news_letter {
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+#news_letter .news_letter_form {
+    width: 100%;
+}
+
+#news_letter .form-control {
+    height: 3rem;
+}
+
+#news_letter .btn:hover {
+    background-color: #d9e2e9;
+    color: rgba(175, 87, 187, 0.883);
+}
+
+#news_letter .contenedor-newsletter {
+    background-color: rgba(230, 189, 189, 0.534);
+}
+
+#news_letter .contenedor-newsletter .texto-copy {
+    color: #a064ac;
+}
+
+#news_letter .contenedor-newsletter .btn {
+    background-color: #9b5ab9;
+    border-color: #193140;
+    border: 3px;
+    width: 100%;
+    height: 20%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+#news_letter .contenedor-newsletter .btn:hover {
+    background-color: #74537c;
+    color: white;
+}
+
+/* Navegador/Menú */
+
+.menu-flex a {
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    color: #11181d;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.section-flex div {
+    text-align: center;
+}
+
+
+/* Tabla actividad */
+
+.titulo {
+    color: #6a5096;
+    text-decoration: underline;
+    line-height: inherit;
+}
+
+/* BEM */
+/* Bloque */
+.tabla {
+    border-color: #813357;
+}
+
+/* Elemento */
+.tabla__varios {
+    font-size: 14px;
+    color: #2f2c38;
+}
+
+/* Modificador */
+.tabla__varios--principal {
+    font-size: 16px;
+    color: #813357;
+}
+
+/* Redes sociales de la página */
+/* Extend */
+.redSocial,
+.redSocial--ig,
+.redSocial--tw,
+.redSocial--spot {
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 5px 5px;
+}
+
+.redSocial--ig {
+    border-color: #dc7ec1;
+    background: linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
+}
+
+.redSocial--tw {
+    border-color: #009de8;
+    background-color: #009de8;
+}
+
+.redSocial--spot {
+    border-color: #3D9970;
+    background-color: #3D9970;
+}
+
+/* BEM */
+/* Bloque */
+.tabla {
+    border-color: #813357;
+}
+
+/* Elemento */
+.tabla__varios {
+    font-size: 14px;
+    color: #2f2c38;
+}
+
+/* Modificador */
+.tabla__varios--principal {
+    font-size: 16px;
+    color: #813357;
+}
+
+/* Fondo fieldset inicio de sesión */
+.marco {
+    background: linear-gradient(90deg, #c28fa5 0%, rgba(142, 95, 168, 0.361765) 100%);
+}
+
+.iniciador {
+    background-image: url(https://sigueenserie.files.wordpress.com/2015/09/tv-series.jpg);
+    background-size: 500px;
+    text-align: center;
+    animation-name: series_fondo;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+
+/* Registro */
+
+.parte-comunidad {
+    color: #8f56bc;
+}
+
+.registro-flex aside {
+   justify-content: left;
+}
+
+
+#uno {
+    background-color: #dca4fc;
+}
+
+#h1-actividad {
+    margin-top: 4px;
+    color: #a478bf;
+}
+
+#h2-actividad {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 24px;
+}
